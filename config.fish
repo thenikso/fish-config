@@ -1,18 +1,15 @@
-for p in /usr/bin /usr/local/bin /usr/local/sbin ~/.config/fish/bin ./virtual/bin ~/.n/bin
-	if test -d $p
-		set -x PATH $p $PATH
-	end
-end
-
-set -xg GOPATH ~/.go
-set -xg N_PREFIX ~/.n
-
 set -x EDITOR "code"
-
-set fish_greeting ""
-set -x CLICOLOR 1
-
 set -x BROWSER open
+
+# Go
+set -x GOPATH ~/.go
+
+# N version manager https://github.com/tj/n
+set -x N_PREFIX ~/.n
+set -x PATH ~/.n/bin $PATH
+
+# Puahyton
+set -x PATH ./virtual/bin $PATH
 
 # Load custom settings for current user
 set USER_SPECIFIC_FILE ~/.config/fish/(whoami).fish
