@@ -3,6 +3,7 @@ set -x BROWSER open
 
 # Go
 set -x GOPATH ~/.go
+set -x PATH ~/.go/bin $PATH
 
 # N version manager https://github.com/tj/n
 set -x N_PREFIX ~/.n
