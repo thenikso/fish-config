@@ -9,8 +9,8 @@ set -x PATH ~/.go/bin $PATH
 set -x N_PREFIX ~/.n
 set -x PATH ~/.n/bin $PATH
 
-# Puahyton
-set -x PATH ./virtual/bin $PATH
+# Local bins (haskell)
+set -x PATH ~/.local/bin $PATH
 
 # Load custom settings for current user
 set USER_SPECIFIC_FILE ~/.config/fish/(whoami).fish
